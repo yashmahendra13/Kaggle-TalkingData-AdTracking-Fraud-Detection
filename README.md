@@ -3,7 +3,9 @@
 # Project Overview:
 
 • Analyze data and implement feature visualization to render correlation and patterns using R's ggplot, corrplot. 
+
 • Employ feature engineering to formulate important features and execute data resampling techniques leveraging R’s rose package and smote to counter imbalance data. 
+
 • Build and evaluate classification models such as Naïve Bayes, KNN, C4.5, random forest and neural network to classify fraudulent ads, with 98% precision in R.
 
 # Instructions:
