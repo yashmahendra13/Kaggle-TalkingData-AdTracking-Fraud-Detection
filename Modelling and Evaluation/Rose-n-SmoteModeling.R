@@ -19,7 +19,7 @@ predictionNonFactored <- function (algo, modelDS, testDf, col) {
 } 
 
 #process smote sampled data
-featuresDF <- read.csv("/Users/Paromita/Documents/CS-513/ProjectFiles/FinalProject/Smote_Sampled.csv")
+featuresDF <- read.csv("/Users/yash/Documents/CS-513/ProjectFiles/FinalProject/Smote_Sampled.csv")
 featuresDF$is_attributed <- as.factor(featuresDF$is_attributed)
 
 #store every 5th record in “test” starting with the first, the rest in “training”
@@ -42,7 +42,7 @@ prediction("C4.5", c45, testDf, 29) #29 is col number of is_attributed
 ################################################################################################
 
 ##process rose sampled data
-featuresDF <- read.csv("/Users/Paromita/Documents/CS-513/ProjectFiles/FinalProject/Rose_Sampled_Data.csv")
+featuresDF <- read.csv("/Users/yash/Documents/CS-513/ProjectFiles/FinalProject/Rose_Sampled_Data.csv")
 featuresDF <- featuresDF[,-1]
 featuresDF$is_attributed <- as.factor(featuresDF$is_attributed)
 

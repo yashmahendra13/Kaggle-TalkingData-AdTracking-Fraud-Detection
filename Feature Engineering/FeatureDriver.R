@@ -17,9 +17,9 @@ library(class)
 
 rm(list = ls())
 
-source("/Users/Paromita/Documents/CS-513/ProjectFiles/FinalProject/FeatureGeneration.R")
+source("/Users/yash/Documents/CS-513/ProjectFiles/FinalProject/FeatureGeneration.R")
 
-df <- read.csv("/Users/Paromita/Documents/CS-513/ProjectFiles/FinalProject/train_sample.csv")
+df <- read.csv("/Users/yash/Documents/CS-513/ProjectFiles/FinalProject/train_sample.csv")
 
 ##break the dataframe in smaller datasets -- group by app
 groupedDS <- split(df, df$app)
@@ -46,5 +46,5 @@ for(ds in groupedDS) {
 #print(featuresDF)
 #remove origianl columns and write to file
 featuresDF <- featuresDF[,-1:-7]
-write.csv(featuresDF,'/Users/Paromita/Documents/CS-513/ProjectFiles/FinalProject/FeatureEngineeredData.csv', row.names=FALSE) #to avoid printing row numbers
+write.csv(featuresDF,'/Users/yash/Documents/CS-513/ProjectFiles/FinalProject/FeatureEngineeredData.csv', row.names=FALSE) #to avoid printing row numbers
 

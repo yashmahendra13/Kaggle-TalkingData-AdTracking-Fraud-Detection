@@ -24,7 +24,7 @@ prediction <- function (algo, modelDS, testDf, col) {
 ##  print(paste(algo, ": accuracyRate: ", accuracyRate, "%, errorRate: ", errorRate, "% ", sep=""))
 ##}  
 
-featuresDF <- read.csv('/Users/Paromita/Documents/CS-513/ProjectFiles/FinalProject/FeatureEngineeredData.csv')
+featuresDF <- read.csv('/Users/yash/Documents/CS-513/ProjectFiles/FinalProject/FeatureEngineeredData.csv')
 featuresDF$is_attributed <- as.factor(featuresDF$is_attributed)
 
 #store every 5th record in “test” starting with the first, the rest in “training”
